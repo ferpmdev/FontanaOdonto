@@ -1,11 +1,11 @@
-package service;
+package com.example.FontanaOdonto.service;
 
+import com.example.FontanaOdonto.model.Paciente;
+import com.example.FontanaOdonto.model.PacienteDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Paciente;
-import model.PacienteDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositoryDAO.IPacienteRepository;
+import com.example.FontanaOdonto.repositoryDAO.IPacienteRepository;
 
 import java.util.HashSet;
 import java.util.List;
@@ -55,7 +55,7 @@ public class PacienteService implements IPacienteService {
         List<Paciente> pacientes = pacienteRepository.findAll();
         Set<PacienteDTO> pacientesDTO = new HashSet<>();
         for(Paciente paciente : pacientes) {
-            pacientesDTO.add(mapper.convertValue(paciente, PacienteDTO.class))
+            pacientesDTO.add(mapper.convertValue(paciente, PacienteDTO.class));
         }
          return pacientesDTO;
     }

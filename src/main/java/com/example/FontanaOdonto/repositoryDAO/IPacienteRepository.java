@@ -1,6 +1,6 @@
-package repositoryDAO;
+package com.example.FontanaOdonto.repositoryDAO;
 
-import model.Paciente;
+import com.example.FontanaOdonto.model.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

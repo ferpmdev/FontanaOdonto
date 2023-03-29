@@ -1,11 +1,11 @@
-package service;
+package com.example.FontanaOdonto.service;
 
+import com.example.FontanaOdonto.model.Odontologo;
+import com.example.FontanaOdonto.model.OdontologoDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Odontologo;
-import model.OdontologoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositoryDAO.IOdontologoRepository;
+import com.example.FontanaOdonto.repositoryDAO.IOdontologoRepository;
 
 import java.util.HashSet;
 import java.util.List;

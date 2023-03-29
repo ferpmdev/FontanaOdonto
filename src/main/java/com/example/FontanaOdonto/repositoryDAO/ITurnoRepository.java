@@ -1,6 +1,6 @@
-package repositoryDAO;
+package com.example.FontanaOdonto.repositoryDAO;
 
-import model.Turno;
+import com.example.FontanaOdonto.model.Turno;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

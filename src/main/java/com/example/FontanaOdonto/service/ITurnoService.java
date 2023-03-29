@@ -1,6 +1,6 @@
-package service;
+package com.example.FontanaOdonto.service;
 
-import model.TurnoDTO;
+import com.example.FontanaOdonto.model.TurnoDTO;
 
 import java.util.Set;
 

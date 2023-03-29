@@ -1,6 +1,7 @@
-package service;
+package com.example.FontanaOdonto.service;
 
-import model.OdontologoDTO;
+import com.example.FontanaOdonto.model.OdontologoDTO;
+
 import java.util.Set;
 
 public interface IOdontologoService {

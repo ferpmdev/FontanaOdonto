@@ -1,6 +1,6 @@
-package service;
+package com.example.FontanaOdonto.service;
 
-import model.PacienteDTO;
+import com.example.FontanaOdonto.model.PacienteDTO;
 
 import java.util.Set;
 
