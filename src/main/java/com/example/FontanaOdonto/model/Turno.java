@@ -6,7 +6,6 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name="turnos")
-
 public class Turno {
   @Id
   @GeneratedValue

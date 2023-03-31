@@ -7,12 +7,11 @@ import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-@Table(name="pacientes")
+@Table(name="Pacientes")
 
 public class Paciente {
     @Id
     @GeneratedValue
-
     private Integer id;
     private String nombre;
     private String apellido;

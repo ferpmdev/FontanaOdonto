@@ -20,6 +20,11 @@ public class PacienteService implements IPacienteService {
     @Autowired
     ObjectMapper mapper;
 
+    private void guardarPaciente(PacienteDTO pacienteDTO) {
+        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
+        pacienteRepository.save(paciente);
+    }
+
     @Override
     public void crearPaciente(PacienteDTO pacienteDTO) {
         guardarPaciente(pacienteDTO);
@@ -34,11 +39,6 @@ public class PacienteService implements IPacienteService {
         return pacienteDTO;
     }
 
-
-    private void guardarPaciente(PacienteDTO pacienteDTO) {
-        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
-        pacienteRepository.save(paciente);
-    }
 
     @Override
     public void modificarPaciente(PacienteDTO pacienteDTO) {
