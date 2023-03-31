@@ -1,6 +1,7 @@
-package com.example.FontanaOdonto.service;
+package com.example.FontanaOdonto;
 
 import com.example.FontanaOdonto.model.PacienteDTO;
+import com.example.FontanaOdonto.service.IPacienteService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
